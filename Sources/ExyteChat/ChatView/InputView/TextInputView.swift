@@ -4,6 +4,7 @@
 
 import SwiftUI
 
+@available(iOS 16.0, *)
 struct TextInputView: View {
 
     @Environment(\.chatTheme) private var theme

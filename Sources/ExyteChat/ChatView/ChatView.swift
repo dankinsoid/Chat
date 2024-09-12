@@ -22,6 +22,7 @@ public enum ReplyMode {
     case answer // when replying to message A, new message with appear direclty below message A as a separate cell without duplicating message A in its body
 }
 
+@available(iOS 16.0, *)
 public struct ChatView<MessageContent: View, InputViewContent: View, MenuAction: MessageMenuAction>: View {
 
     /// To build a custom message view use the following parameters passed by this closure:
@@ -447,6 +448,7 @@ public struct ChatView<MessageContent: View, InputViewContent: View, MenuAction:
     }
 }
 
+@available(iOS 16.0, *)
 public extension ChatView {
 
     func betweenListAndInputViewBuilder<V: View>(_ builder: @escaping ()->V) -> ChatView {

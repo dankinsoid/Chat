@@ -7,6 +7,7 @@
 
 import SwiftUI
 
+@available(iOS 16.0, *)
 public extension ChatView where MessageContent == EmptyView {
 
     init(messages: [Message],
@@ -24,6 +25,7 @@ public extension ChatView where MessageContent == EmptyView {
     }
 }
 
+@available(iOS 16.0, *)
 public extension ChatView where InputViewContent == EmptyView {
 
     init(messages: [Message],
@@ -41,6 +43,7 @@ public extension ChatView where InputViewContent == EmptyView {
     }
 }
 
+@available(iOS 16.0, *)
 public extension ChatView where MenuAction == DefaultMessageMenuAction {
 
     init(messages: [Message],
@@ -58,6 +61,7 @@ public extension ChatView where MenuAction == DefaultMessageMenuAction {
     }
 }
 
+@available(iOS 16.0, *)
 public extension ChatView where MessageContent == EmptyView, InputViewContent == EmptyView {
 
     init(messages: [Message],
@@ -73,6 +77,7 @@ public extension ChatView where MessageContent == EmptyView, InputViewContent ==
     }
 }
 
+@available(iOS 16.0, *)
 public extension ChatView where InputViewContent == EmptyView, MenuAction == DefaultMessageMenuAction {
 
     init(messages: [Message],
@@ -88,6 +93,7 @@ public extension ChatView where InputViewContent == EmptyView, MenuAction == Def
     }
 }
 
+@available(iOS 16.0, *)
 public extension ChatView where MessageContent == EmptyView, MenuAction == DefaultMessageMenuAction {
 
     init(messages: [Message],
@@ -103,6 +109,7 @@ public extension ChatView where MessageContent == EmptyView, MenuAction == Defau
     }
 }
 
+@available(iOS 16.0, *)
 public extension ChatView where MessageContent == EmptyView, InputViewContent == EmptyView, MenuAction == DefaultMessageMenuAction {
 
     init(messages: [Message],

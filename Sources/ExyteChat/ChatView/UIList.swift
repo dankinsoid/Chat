@@ -11,6 +11,7 @@ public extension Notification.Name {
     static let onScrollToBottom = Notification.Name("onScrollToBottom")
 }
 
+@available(iOS 16.0, *)
 struct UIList<MessageContent: View, InputView: View>: UIViewRepresentable {
 
     typealias MessageBuilderClosure = ChatView<MessageContent, InputView, DefaultMessageMenuAction>.MessageBuilderClosure
